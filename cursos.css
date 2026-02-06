@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  height: 150px;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 1rem 2rem;
+  gap: 2rem;
+  border-bottom: 5px solid #0c0c0c;
+}
+
+header img {
+  border-radius: 100%;
+  max-width: 110px;
+  height: auto;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  gap: 2rem;
+  font-size: 1.3em;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+header nav a:hover,
+header nav a.active { 
+  color: #5d9a67;
+}
+
+.welcome {
+  background: linear-gradient(rgba(0, 0, 0, 0.5)), url('yoga.png') no-repeat center center;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #5d9a67;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #4a7d53;
+}
+
+.cursos-lista {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.curso-card {
+  text-align: center;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.curso-card:hover {
+  transform: translateY(-5px);
+}
+
+.curso-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.curso-info {
+  padding: 1.5rem;
+}
+
+.curso-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.curso-info p {
+  color: #666;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.curso-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: #f4f4f4;
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+.social-links {
+  margin-bottom: 1rem;
+}
+
+.social-links a {
+  font-size: 1.8rem;
+  color: #333;
+  margin: 0 1rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #5d9a67;
+}
+
+footer p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/*Responsivo*/
+@media (max-width: 768px) {
+  .welcome {
+    height: 500px;
+  }
+
+  .cursos-lista {
+    grid-template-columns: 1fr;
+  }
+}

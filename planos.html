@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planos - Yoga Studio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="planos.css" />
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <img src="logo.png" alt="Logo do Yoga Studio" />
+    </a>
+    <nav>
+      <ul>
+        <li><a href="aulas.html">Aulas</a></li>
+        <li><a href="cursos.html">Cursos</a></li>
+        <li><a href="planos.html" class="active">Planos</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="welcome">
+      <h1>Escolha seu plano ideal</h1>
+      <p>Encontre o plano que combina com sua rotina e objetivos de yoga.</p>
+    </section>
+
+    <section class="planos-lista">
+      <div class="plano-card">
+        <div class="plano-titulo">
+          <h3>Básico</h3>
+          <p class="preco">R$ 49/mês</p>
+        </div>
+        <ul class="plano-itens">
+          <li>4 aulas por mês</li>
+          <li>Acesso a aulas gravadas</li>
+          <li>Newsletter semanal</li>
+          <li>Suporte por e-mail</li>
+        </ul>
+        <a href="#" class="plano-btn">Escolher Plano</a>
+      </div>
+
+      <div class="plano-card">
+        <div class="plano-titulo">
+          <h3>Essencial</h3>
+          <p class="preco">R$ 89/mês</p>
+        </div>
+        <ul class="plano-itens">
+          <li>Aulas ilimitadas</li>
+          <li>Cursos inclusos</li>
+          <li>Meditação guiada</li>
+          <li>Suporte por e-mail e chat</li>
+        </ul>
+        <a href="#" class="plano-btn">Escolher Plano</a>
+      </div>
+
+      <div class="plano-card">
+        <div class="plano-titulo">
+          <h3>Premium</h3>
+          <p class="preco">R$ 149/mês</p>
+        </div>
+        <ul class="plano-itens">
+          <li>Todas as aulas e cursos</li>
+          <li>Sessões com instrutor particular</li>
+          <li>Descontos em eventos</li>
+          <li>Suporte 24h</li>
+        </ul>
+        <a href="#" class="plano-btn">Escolher Plano</a>
+      </div>
+    </section>
+  </main>
+  <div id="modalInscricao" class="modal" style="display: none;">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Inscreva-se Agora!</h2>
+        <form id="formInscricao">
+          <label for="nome">Nome Completo:</label>
+          <input type="text" id="nome" name="nome" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone">
+
+          <label for="aula">Escolha a Aula:</label>
+          <select id="aula" name="aula">
+            <option value="">Selecione uma aula</option>
+            <option value="hatha">Hatha Yoga</option>
+            <option value="vinyasa">Vinyasa Flow</option>
+            <option value="yin">Yin Yoga</option>
+            <option value="meditacao">Meditação Guiada</option>
+          </select>
+
+          <label for="curso">Escolha o Curso:</label>
+          <select id="curso" name="curso">
+            <option value="">Selecione um curso</option>
+            <option value="meditacao_inicio">Meditação para Iniciantes</option> <!-- Renomeei para evitar conflito com a aula -->
+            <option value="avancado">Yoga Avançado</option>
+            <option value="respiracao">Técnicas de Respiração</option>
+          </select>
+
+          <label for="plano">Escolha o Plano:</label>
+          <select id="plano" name="plano">
+            <option value="">Selecione um plano</option>
+            <option value="basico">Básico - R$ 49/mês</option>
+            <option value="essencial">Essencial - R$ 89/mês</option>
+            <option value="premium">Premium - R$ 149/mês</option>
+          </select>
+
+          <button type="submit" class="submit-btn">Enviar Inscrição</button> <!-- Botão dentro do form -->
+        </form>
+      </div>
+    </div>
+  <footer>
+    <div class="social-links">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+        <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+      </a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+      </a>
+      <a href="https://x.com" target="_blank" aria-label="X (Twitter)">
+        <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+      </a>
+    </div>
+
+    </div>
+    <p>&copy; 2026 Yoga Studio. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="planos.js"></script>
+</body>
+</html>

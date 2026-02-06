@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  height: 150px;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 1rem 2rem;
+  gap: 2rem;
+  border-bottom: 5px solid #0c0c0c;
+}
+
+header img {
+  border-radius: 100%;
+  max-width: 110px;
+  height: auto;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  gap: 2rem;
+  font-size: 1.3em;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+header nav a:hover {
+  color: #5d9a67;
+}
+
+.welcome {
+  background: linear-gradient(rgba(0, 0, 0, 0.5)), url('yoga.png') no-repeat center center;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #5d9a67;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #4a7d53;
+}
+
+.conteudo1 {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.conteudo1 h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.conteudo1 p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  color: #555;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.card a {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color:#5d9a67;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.card a:hover {
+  background-color: #4a7d53;
+}
+
+.conteudo2 {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text2 {
+  flex: 1;
+  text-align: left;
+}
+
+.text2 h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.text2 p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.conteudo2 img {
+  width: 600px;
+  height: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+.conteudo3 {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.conteudo3 img {
+  width: 600px;
+  height: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+.text3{
+  flex: 1;
+  text-align: left;
+}
+
+.text3 h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.text3 p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.conteudo3 .button {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  background-color: #f4f4f4;
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+.social-links {
+  margin-bottom: 1rem;
+}
+
+.social-links a {
+  font-size: 1.8rem;
+  color: #333;
+  margin: 0 1rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #5d9a67;
+}
+
+footer p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Responsivo*/
+@media (max-width: 768px) {
+  .welcome {
+    height: 500px;
+  }
+
+  .conteudo2,
+  .conteudo3 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .conteudo2 img,
+  .conteudo3 img {
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .text,
+  .texto-lado-direito {
+    text-align: center;
+  }
+}
