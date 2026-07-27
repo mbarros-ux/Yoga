@@ -26,3 +26,5 @@ O site apresenta uma interface limpa e minimalista, com seções de apresentaç�
 1. Clone este repositório:
 ```bash
 git clone https://github.com/mbarros-ux/Yoga.git
+```
+2.Abra o arquivo ```index.html``` em seu navegador.
